@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="openwindow()">open window</button>
+    <script>
+        Document.write("innerwidth is:" + window.innerWidth+ "<br>" + "Innerheight is:" + window.innerHeight+ "<br>")
+
+        Document.write("outerwidth is:" + window.innerWidth+ "<br>" + "outerheight is:" + window.outerHeight+ "<br>")
+
+       function openwindow(){
+        let newwindow= window.open("https://www.flipkart.com/", '_blank' , 'width=800')
+       }
+
+       document.write("navigator cookieenabled:" + navigator.cookieEnabled)
+       document.write(navigator.javaEnabled())
+
+
+      Document.write("screen height:" + Window.screen.height)
+      Document.write("screen height:" + Window.screen.width)
+      Document.write("screen availheight:" + Window.screen.availheight)
+      Document.write("screen availwidth:" + Window.screen.availwidth)
+    </script>
+</body>
+</html>
