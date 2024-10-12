@@ -1,0 +1,30 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            background-color: black;
+            color: white;
+            width: 300px;
+            padding: 10px;
+            margin: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<button onclick="red()" class="black red">click to change to red button</button><br><br>
+
+<button onclick="blue()" class="black blue">click to change to blue button</button><br><br>
+
+<button onclick=" black()" > click to change all button to initial state</button><br><br>
+<script >
+function red(){
+    document.getElementsByClassName("red")[0].style.backgroundcolor='red';
+}
+</script>
+</body>
+</html>
