@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+     const person={
+          firstname: "jhon",
+         lastname:"whillium",
+      fullname: function(){
+             return this.firstname + "" + this.lastname 
+        }
+    }
+
+
+     const member ={
+        firstname : "max",
+        lastname : "robert",
+     }
+
+    let fullname= person. fullname. bind(member)
+     document.write(fullname())
+
+      const person1 ={
+         firstname:"john",
+         lastname :"willum",
+      }
+
+
+         const person2 ={
+          firstname:"john",
+         lastname :"willum",
+      }
+      document.write(person.fullname.call (person2 ,["pune" , "india"]))
+      person.fullname.apply(person1)
+
+   </script> 
+</body>
+</html>
